@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Aula from "./Aula.jsx";
 import Coins from "./Coins.jsx";
+import Vat from "./Vat.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/coins",
     element: <Coins />,
+  },
+  {
+    path: "/vat",
+    element: <Vat />,
   },
 ]);
 
