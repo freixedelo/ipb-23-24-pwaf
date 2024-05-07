@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import Aula from "./Aula.jsx";
 import Coins from "./Coins.jsx";
 import Vat from "./Vat.jsx";
+import Meto from "./Meto.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/vat",
     element: <Vat />,
+  },
+  {
+    path: "/meteo",
+    element: <Meto />,
   },
 ]);
 

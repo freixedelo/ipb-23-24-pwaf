@@ -7,14 +7,14 @@ export default function Coins() {
   const [coins, setCoins] = useState([]);
 
   useEffect(() => {
-    async function getData() {
-      const coinsResult = await axios(endpoint);
-      setCoins(coinsResult.data);
+    async function getCoins() {
+      const result = await axios(endpoint);
+      setCoins(result.data);
     }
 
-    getData();
+    getCoins();
   }, []);
-  console.log(coins);
+
   return (
     <div>
       <h1>Coins</h1>
